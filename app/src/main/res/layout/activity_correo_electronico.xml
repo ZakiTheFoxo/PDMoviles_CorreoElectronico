@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CorreoElectronico">
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRemitente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remitente" />
+
+            <TextView
+                android:id="@+id/txtDestinatario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/destinatario" />
+
+            <TextView
+                android:id="@+id/txtConCopia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/con_copia" />
+
+            <TextView
+                android:id="@+id/txtAsunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/asunto" />
+
+            <TextView
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

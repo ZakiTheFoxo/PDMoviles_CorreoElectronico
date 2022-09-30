@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MiCorreo</string>
+    <string name="remitente">De:</string>
+    <string name="destinatario">Para:</string>
+    <string name="con_copia">CC:</string>
+    <string name="asunto">Asunto:</string>
+    <string name="mensaje">Mensaje:</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+</resources>
