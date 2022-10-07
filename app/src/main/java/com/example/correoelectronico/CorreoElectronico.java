@@ -10,11 +10,11 @@ import android.widget.Toast;
 
 public class CorreoElectronico extends AppCompatActivity implements View.OnClickListener{
     // Variables
-    TextView txtRemitente, txtDestinatario, txtConCopia, txtAsunto, txtMensaje;
+    private TextView txtRemitente, txtDestinatario, txtConCopia, txtAsunto, txtMensaje;
 
-    EditText edtEmailRemitente, edtEmailDestinatario, edtEmailConCopia, edtPlainAsunto, edtMultiMensaje;
+    private EditText edtEmailRemitente, edtEmailDestinatario, edtEmailConCopia, edtPlainAsunto, edtMultiMensaje;
 
-    Button btnAceptar, btnCancelar;
+    private Button btnAceptar, btnCancelar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

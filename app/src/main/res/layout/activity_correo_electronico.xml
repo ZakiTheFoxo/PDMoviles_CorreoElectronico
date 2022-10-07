@@ -24,6 +24,7 @@
                 android:id="@+id/txtRemitente"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:gravity="right|center_vertical"
                 android:text="@string/remitente"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -31,6 +32,7 @@
                 android:id="@+id/txtDestinatario"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:gravity="right|center_vertical"
                 android:text="@string/destinatario"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -38,6 +40,7 @@
                 android:id="@+id/txtConCopia"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:gravity="right|center_vertical"
                 android:text="@string/con_copia"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -45,6 +48,7 @@
                 android:id="@+id/txtAsunto"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:gravity="right|center_vertical"
                 android:text="@string/asunto"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -52,6 +56,7 @@
                 android:id="@+id/txtMensaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
                 android:text="@string/mensaje"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </LinearLayout>
