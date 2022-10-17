@@ -3,7 +3,9 @@ package com.example.correoelectronico;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,15 +50,16 @@ public class CorreoElectronico extends AppCompatActivity{
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Se presiono el boton Enviar", Toast.LENGTH_SHORT).show();
 
-                Intent intent   = new Intent();
+                Intent intent   = new Intent(Intent.ACTION_SEND);
 
-                intent.setAction(Intent.ACTION_SEND);
+                intent.setData(ContactsContract.CommonDataKinds.Email.CONTENT_URI);
 
-                intent.putExtra(Intent.EXTRA_EMAIL, edtEmailRemitente.getText().toString());
                 intent.putExtra(Intent.EXTRA_EMAIL, edtEmailDestinatario.getText().toString());
                 intent.putExtra(Intent.EXTRA_CC, edtEmailConCopia.getText().toString());
                 intent.putExtra(Intent.EXTRA_SUBJECT, edtPlainAsunto.getText().toString());
                 intent.putExtra(Intent.EXTRA_TEXT, edtMultiMensaje.getText().toString());
+
+                startActivity(Intent.createChooser(intent, null));
             }
         });
         btnCancelar.setOnClickListener(new View.OnClickListener() {
