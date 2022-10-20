@@ -54,8 +54,9 @@ public class CorreoElectronico extends AppCompatActivity{
 
                 intent.setData(ContactsContract.CommonDataKinds.Email.CONTENT_URI);
 
-                intent.putExtra(Intent.EXTRA_EMAIL, edtEmailDestinatario.getText().toString());
-                intent.putExtra(Intent.EXTRA_CC, edtEmailConCopia.getText().toString());
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{edtEmailDestinatario.getText().toString()});
+                intent.putExtra(Intent.EXTRA_CC, new String[]{edtEmailConCopia.getText().toString()});
+                //intent.putExtra(Intent.EXTRA_BCC, new String[]{edtEmailConCopiaOculta.getText().toString()});
                 intent.putExtra(Intent.EXTRA_SUBJECT, edtPlainAsunto.getText().toString());
                 intent.putExtra(Intent.EXTRA_TEXT, edtMultiMensaje.getText().toString());
 
